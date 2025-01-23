@@ -1,4 +1,8 @@
 package com.miguelmialdea.data.dto
 
-class AuthDto {
-}
+data class AuthDto(
+    val userId: String,
+    val name: String,
+    val email: String,
+    val token: String
+)

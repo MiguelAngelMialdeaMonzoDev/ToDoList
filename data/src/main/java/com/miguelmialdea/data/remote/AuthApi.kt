@@ -1,4 +1,8 @@
 package com.miguelmialdea.data.remote
 
-class AuthApi {
+import com.miguelmialdea.data.dto.AuthDto
+
+interface AuthApi {
+    suspend fun login(email: String, password: String): AuthDto
+    suspend fun register(name: String, email: String, password: String): AuthDto
 }

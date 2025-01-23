@@ -1,4 +1,7 @@
 package com.miguelmialdea.domain.model
 
-class UserModel {
-}
+data class UserModel(
+    val id: String,
+    val name: String,
+    val email: String
+)
